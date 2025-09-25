@@ -95,6 +95,15 @@ main {
   font-size: 1.0em;
   line-height: 1.8;
   flex: 1;
+  
+  
+}
+.intro-text h2{
+  color: SteelBlue;
+  margin-bottom: 50px;
+  font-size: 1.8em;
+  font-weight: bold;
+  
 }
 
 .equipamento-img {
