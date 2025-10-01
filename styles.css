@@ -422,6 +422,50 @@ footer {
 .social-icon:hover {
   transform: scale(1.1);
 }
+/* Títulos principais */
+.secao-titulo {
+  margin-left: 100px; 
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 28px;
+}
+
+/* Secções dos centros */
+.centro-section {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+.centro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.centro-section.invert .centro-content {
+  flex-direction: row-reverse; /* alterna lado */
+}
+
+.centro-text {
+  flex: 1;
+}
+.centro-text a {
+  text-decoration: none;
+  color: #000000; /* preto */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.centro-text a:hover {
+  color: SteelBlue;
+}
+
+
+
+
 
 
 
