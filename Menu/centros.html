@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Centros - Clube de Judo Hajime</title>
     <link rel="stylesheet" href="../styles.css" />
+
+    <!-- Leaflet CSS e JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
   </head>
+
   <body>
     <header>
       <div class="header-container">
@@ -26,72 +32,110 @@
     </header>
 
     <main>
-  <h2 class="secao-titulo">Centros</h2>
-  <section class="centro-section">
-    <div class="centro-content">
-      <div class="centro-text">
-        <ul class="centro-lista">
-          <li><a href="../Centros/bombeirosMoscavidePortela.html">Bombeiros Voluntários de Moscavide e Portela</a></li>
-          <li><a href="../Centros/EscolaSecundariaJoseGomesFerreira.html">Escola Secundária José Gomes Ferreira</a></li>
-          <li><a href="../Centros/EspacoOlivalBasto.html">Espaço Multiusos de Olival Basto</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-   <h2 class="secao-titulo">Colégios</h2>
-  <section class="colegio-section">
-    <div class="centro-content">
-      <div class="centro-text">
-        <ul class="centro-lista">
-          <li><a href="../Colegios/ColegioCosmeEDamiao.html">Colégio Cosme e Damião</a></li>
-          <li><a href="../Colegios/ColegioDaTorre.html">Colégio da Torre</a></li>
-          <li><a href="../Colegios/ColegioDosPlatanos.html">Colégio dos Plátanos</a></li>
-          <li><a href="../Colegios/ColegioLusoSuico.html">Colégio Luso-Suiço</a></li>
-          <li><a href="../Colegios/ColegioMiraRio.html">Colégio Mira Rio</a></li>
-          <li><a href="../Colegios/ColegioMoinhoSonho.html">Colégio Moinho de Sonho</a></li>
-          <li><a href="../Colegios/ColegioOPeluche.html">Colégio O Peluche</a></li>
-          <li><a href="../Colegios/ColegioPequenosSorrisos.html">Colégio Pequenos Sorrisos</a></li>
-          <li><a href="../Colegios/ColegioPilotoDiese.html">Colégio Piloto Diese</a></li>
-          <li><a href="../Colegios/ColegioPlanalto.html">Colégio Planalto</a></li>
-          <li><a href="../Colegios/ColegioQuintaDoLago.html">Colégio Quinta do Lago</a></li>
-          <li><a href="../Colegios/ColegioSagradoCoracaoMaria.html">Colégio Sagrado Coraçao Maria</a></li>
-          <li><a href="../Colegios/ColegioSaintDanielBrottier.html">Colégio Saint Daniel Brottier</a></li>
-          <li><a href="../Colegios/ColegioStJhonsSchool.html">Colégio St. Jhon's School</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-   <h2 class="secao-titulo">Escolas</h2>
-  <section class="centro-section">
-    <div class="centro-content">
-      <div class="centro-text">
-        <ul class="centro-lista">
-          <li><a href="../Externatos/ExternatoARitinha.html">Externato A Ritinha</a></li>
-          <li><a href="../Externatos/ExternatoJardimDosLombos.html">Externato Jardim dos Lombos</a></li>
-          <li><a href="../Externatos/ExternatoNossaSenhoraDaPaz.html">Externato Nossa Senhora da Paz</a></li>
-          <li><a href="../Externatos/ExternatoNovaToca.html">Externato Nova Toca</a></li>
-          <li><a href="../Externatos/ExternatoONial.html">Externato O Nial</a></li>
-          <li><a href="../Externatos/ExternatoSantaCatarina.html">Externato Santa Catarina</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  </section>
-   <h2 class="secao-titulo">Externato</h2>
-  <section class="centro-section">
-    <div class="centro-content">
-      <div class="centro-text">
-        <ul class="centro-lista">
-          <li><a href="../Centros/bombeirosMoscavidePortela.html">Bombeiros Voluntários de Moscavide e Portela</a></li>
-          <li><a href="../Centros/EscolaSecundariaJoseGomesFerreira.html">Escola Secundária José Gomes Ferreira</a></li>
-          <li><a href="../Centros/EspacoOlivalBasto.html">Espaço Multiusos de Olival Basto</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <h2 class="secao-titulo">Centros</h2>
+      <section class="centro-section">
+        <div class="centro-content">
+          <div class="centro-text">
+            <ul class="centro-lista">
+              <li><a href="../Centros/bombeirosMoscavidePortela.html">Bombeiros Voluntários de Moscavide e Portela</a></li>
+              <li><a href="../Centros/EscolaSecundariaJoseGomesFerreira.html">Escola Secundária José Gomes Ferreira</a></li>
+              <li><a href="../Centros/EspacoOlivalBasto.html">Espaço Multiusos de Olival Basto</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLEGIOS -->
+      <h2 class="colegio-titulo">Colégios</h2>
+      <section class="colegio-section">
+        <div class="colegio-content">
+          <div class="colegio-text">
+            <ul class="colegio-lista">
+              <li><a href="../Colegios/ColegioCosmeEDamiao.html">Colégio Cosme e Damião</a></li>
+              <li><a href="../Colegios/ColegioDaTorre.html">Colégio da Torre</a></li>
+              <li><a href="../Colegios/ColegioDosPlatanos.html">Colégio dos Plátanos</a></li>
+              <li><a href="../Colegios/ColegioLusoSuico.html">Colégio Luso-Suiço</a></li>
+              <li><a href="../Colegios/ColegioMiraRio.html">Colégio Mira Rio</a></li>
+              <li><a href="../Colegios/ColegioMoinhoSonho.html">Colégio Moinho de Sonho</a></li>
+              <li><a href="../Colegios/ColegioOPeluche.html">Colégio O Peluche</a></li>
+              <li><a href="../Colegios/ColegioPequenosSorrisos.html">Colégio Pequenos Sorrisos</a></li>
+              <li><a href="../Colegios/ColegioPilotoDiese.html">Colégio Piloto Diese</a></li>
+              <li><a href="../Colegios/ColegioPlanalto.html">Colégio Planalto</a></li>
+              <li><a href="../Colegios/ColegioQuintaDoLago.html">Colégio Quinta do Lago</a></li>
+              <li><a href="../Colegios/ColegioSagradoCoracaoMaria.html">Colégio Sagrado Coração Maria</a></li>
+              <li><a href="../Colegios/ColegioSaintDanielBrottier.html">Colégio Saint Daniel Brottier</a></li>
+              <li><a href="../Colegios/ColegioStJhonsSchool.html">Colégio St. Jhon's School</a></li>
+            </ul>
+          </div>
+
+         <div class="map-container">
+  <div id="map"></div>
+</div>
+      </section>
+
+      <h2 class="secao-titulo">Escolas</h2>
+      <section class="escolas-section">
+        <div class="escolas-content">
+          <div class="escolas-text">
+            <ul class="escolas-lista">
+              <li><a href="../Externatos/ExternatoARitinha.html">Externato A Ritinha</a></li>
+              <li><a href="../Externatos/ExternatoJardimDosLombos.html">Externato Jardim dos Lombos</a></li>
+              <li><a href="../Externatos/ExternatoNossaSenhoraDaPaz.html">Externato Nossa Senhora da Paz</a></li>
+              <li><a href="../Externatos/ExternatoNovaToca.html">Externato Nova Toca</a></li>
+              <li><a href="../Externatos/ExternatoONial.html">Externato O Nial</a></li>
+              <li><a href="../Externatos/ExternatoSantaCatarina.html">Externato Santa Catarina</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+ 
+
 </main>
+     <!-- 📨 Secção do formulário de contacto -->
+ <section class="contact-section">
+  <h2 class="secao-tituloFormulario">Contacte-nos</h2>
+  <form action="https://formspree.io/f/mwprqbwv" method="POST" class="contact-form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+<footer>
+  <!-- Torisport à esquerda -->
+  <div class="footer-logos">
+    
+      <img src="../images/Hajime-logo-tudo-branco.jpg" alt="Clube de Judo Hajime" class="club-logo">
+      
+    <a href="https://www.lojatorisport.pt/" target="_blank">
+    <img src="../images/torisport.jpg" alt="Torisport" class="torisport-logo">
+    </a>
+  </div>
+
+  <!-- Conteúdo central -->
+  <div class="footer-center">
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=100042616491458&locale=pt_PT" target="_blank">
+        <img src="../images/facebook.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/clubedejudohajime/" target="_blank">
+        <img src="../images/instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+    <p>
+      Todos os direitos reservados | 
+      <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao" target="_blank">Livro de Reclamações</a>
+    </p>
+  </div>
+</footer>
   </body>
+   
 </html>
-
-

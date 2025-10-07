@@ -95,15 +95,13 @@ main {
   font-size: 1.0em;
   line-height: 1.8;
   flex: 1;
-  
-  
 }
-.intro-text h2{
+
+.intro-text h2 {
   color: SteelBlue;
   margin-bottom: 50px;
   font-size: 1.8em;
   font-weight: bold;
-  
 }
 
 .equipamento-img {
@@ -262,9 +260,60 @@ main {
   line-height: 1.6;
 }
 
-/* ===== MEDIA QUERIES RESPONSIVAS ===== */
+/* ===================== */
+/* 🎯 FORMULÁRIO DE CONTACTO */
+/* ===================== */
+.contact-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 12px;
+}
 
-/* Tablets */
+.contact-section h2 {
+  color: SteelBlue;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: SteelBlue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #4682B4;
+}
+
+
+/* ===== MEDIA QUERIES RESPONSIVAS ===== */
 @media (max-width: 1024px) {
   .intro-section {
     flex-direction: column;
@@ -280,7 +329,6 @@ main {
   }
 }
 
-/* Smartphones */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -311,7 +359,6 @@ main {
   }
 }
 
-/* Pequenos dispositivos */
 @media (max-width: 480px) {
   .equipamento-img {
     width: 200px;
@@ -329,7 +376,12 @@ main {
   .codigo-item, .benefit-item {
     max-width: 90%;
   }
+
+  .contact-section .container {
+    padding: 30px 20px;
+  }
 }
+
 /* Seção Galeria */
 .white-gallery {
   background-color: white;
@@ -371,6 +423,8 @@ main {
 .gallery-item:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Rodapé */
 footer {
   display: flex;
   align-items: center;
@@ -382,7 +436,7 @@ footer {
 .footer-logos {
   display: flex;
   align-items: center;
-  gap: 20px; /* espaço entre os dois logos */
+  gap: 20px;
 }
 
 .torisport-logo {
@@ -392,7 +446,7 @@ footer {
 }
 
 .club-logo {
-  width: 60px; /* ajusta conforme necessário */
+  width: 60px;
   height: auto;
 }
 
@@ -422,7 +476,8 @@ footer {
 .social-icon:hover {
   transform: scale(1.1);
 }
-/* Títulos principais */
+
+/* Outras secções */
 .secao-titulo {
   margin-left: 100px; 
   margin-top: 30px;
@@ -430,8 +485,7 @@ footer {
   color: #000;
   font-size: 28px;
 }
-
-/* Secções dos centros */
+/* secºao Centros */
 .centro-section {
   background-color: #fff;
   padding: 40px 20px;
@@ -446,43 +500,100 @@ footer {
 }
 
 .centro-section.invert .centro-content {
-  flex-direction: row-reverse; /* alterna lado */
+  flex-direction: row-reverse;
 }
 
-.centro-text {
-  flex: 1;
-}
-.centro-text a {
+.centro-text a,
+.escolas-text a,
+.colegio-text a {
   text-decoration: none;
-  color: #000000; /* preto */
+  color: #000;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-.centro-text a:hover {
+.centro-text a:hover,
+.escolas-text a:hover,
+.colegio-text a:hover {
   color: SteelBlue;
 }
 
-
-
-
-
-
-
-/* Responsividade para a galeria */
-@media (max-width: 768px) {
-  .white-gallery h2 {
-    font-size: 2em;
-  }
+/* secºao Colegios */
+.colegio-titulo {
+  margin-left: 100px; 
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 28px;
+}
+.colegio-section {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+.colegio-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-  .white-gallery h2 {
-    font-size: 1.8em;
-  }
+.colegio-section.invert .colegio-content {
+  flex-direction: row-reverse;
 }
 
+.centro-text a,
+.escolas-text a,
+.colegio-text a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
+.centro-text a:hover,
+.escolas-text a:hover,
+.colegio-text a:hover {
+  color: SteelBlue;
+}
+/* secºao Escolas */
+.escolas-titulo {
+  margin-left: 100px; 
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 28px;
+}
+.escolas-section {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+.escolas-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+.escolas-section.invert .escolas-content {
+  flex-direction: row-reverse;
+}
 
+.centro-text a,
+.escolas-text a,
+.colegio-text a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.centro-text a:hover,
+.escolas-text a:hover,
+.colegio-text a:hover {
+  color: SteelBlue;
+}
 
