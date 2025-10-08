@@ -596,4 +596,104 @@ footer {
 .colegio-text a:hover {
   color: SteelBlue;
 }
+/* Quem Somos */
+.quem-somos-container {
+  display: flex;
+  align-items: flex-start; /* Alinha pelo topo */
+  justify-content: space-between;
+  gap: 50px;
+  padding: 40px 60px; /* Aumenta margem lateral */
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.texto-quem-somos {
+  flex: 1;
+  min-width: 300px;
+  text-align:left;
+  padding-right: 50px; /* Aumenta espaço entre texto e logo */
+}
+
+.texto-quem-somos h2 {
+  color: SteelBlue;
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-left: 20; /* Força alinhamento à esquerda */
+}
+
+.texto-quem-somos p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-left: 0; /* Remove recuo, mais à esquerda */
+}
+
+.logo-quem-somos img {
+  max-width: 400px; /* AUMENTADO de 350px para 450px */
+  width: 150%;
+  height: auto;
+  border-radius: 12px;
+}
+.historial-section {
+  background: SteelBlue;
+  color: white;
+  padding: 60px 20px;
+}
+
+.historial-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.historial-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.historial-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.historial-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.historial-texto h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.historial-texto p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .quem-somos-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .texto-quem-somos {
+    padding-right: 0;
+  }
+
+  .logo-quem-somos img {
+    max-width: 300px; /* Aumentado para manter destaque no mobile */
+  }
+}
+
+
 
