@@ -677,6 +677,105 @@ footer {
   line-height: 1.8;
   margin-bottom: 20px;
 }
+.gallery {
+  position: relative;
+  width: 220px;
+  height: 140px;
+  transform-style: preserve-3d;
+  animation: rotate 35s linear infinite;
+  margin: 0 auto;
+}
+
+.gallery span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(280px);
+}
+
+.gallery {
+  position: relative;
+  width: 220px;
+  height: 140px;
+  transform-style: preserve-3d;
+  animation: rotate 35s linear infinite;
+  margin: 0; /* remove o margin auto */
+  margin-left: 0; /* garante que está encostado à esquerda */
+}
+
+
+/* Animação da rotação */
+@keyframes rotate {
+  from {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+/* Ajuste opcional para ecrãs muito pequenos */
+@media (max-width: 600px) {
+  .gallery {
+    width: 180px;
+    height: 120px;
+  }
+
+  .gallery span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(220px);
+  }
+}
+
+.projeto-social-section {
+  background-color: white;
+  padding: 100px 40px;
+}
+
+.projeto-social-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.texto-projeto-social {
+  flex: 1 1 55%;
+  text-align: left; /* Alinha o texto à esquerda */
+  padding-right: 50px;
+}
+
+.texto-projeto-social h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-align: left; /* Garante alinhamento do título */
+}
+
+.texto-projeto-social p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left; /* Alinha todo o texto à esquerda */
+}
+
+.imagem-projeto-social {
+  flex: 1 1 40%;
+  text-align: left; /* Se preferires a imagem alinhada à esquerda */
+}
+
+.imagem-projeto-social img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 
 
 @media (max-width: 768px) {
