@@ -731,43 +731,42 @@ footer {
 .projeto-social-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row; /* texto à esquerda, imagem à direita */
   max-width: 1200px;
   margin: 0 auto;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.texto-projeto-social {
+.projeto-social-texto {
   flex: 1 1 55%;
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: left;
   padding-right: 50px;
 }
 
-.texto-projeto-social h2 {
+.projeto-social-texto h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
-  color: #1a1a1a;
-  text-align: left; /* Garante alinhamento do título */
+  color: black;
 }
 
-.texto-projeto-social p {
+.projeto-social-texto p {
   font-size: 1.1em;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #333;
   margin-bottom: 15px;
-  text-align: left; /* Alinha todo o texto à esquerda */
 }
 
-.imagem-projeto-social {
+.projeto-social-imagem {
   flex: 1 1 40%;
-  text-align: left; /* Se preferires a imagem alinhada à esquerda */
+  text-align: right; /* opcional */
 }
 
-.imagem-projeto-social img {
+.projeto-social-imagem img {
   width: 100%;
-  max-width: 450px;
+  max-width: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 
 
