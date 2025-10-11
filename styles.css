@@ -747,7 +747,7 @@ footer {
 .projeto-social-texto h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
-  color: black;
+  color: steelblue;
 }
 
 .projeto-social-texto p {
@@ -768,6 +768,33 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
+/* 🌟 Estilo da introdução da equipa técnica */
+.intro-equipa {
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: justify;
+  line-height: 1.8;
+  color: #f4f4f4;
+  padding: 0 1rem;
+}
+
+.intro-equipa h2 {
+  text-align: center;        /* 👉 centraliza o título */
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* opcional — dá um toque mais profissional */
+}
+.intro-equipa h3 {
+  text-align: center;        /* 👉 centraliza o título */
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* opcional — dá um toque mais profissional */
+}
+
 
 
 

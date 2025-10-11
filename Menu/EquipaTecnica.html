@@ -5,73 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Equipa Técnica - Clube de Judo Hajime</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../equipa.css" /> <!-- novo ficheiro CSS -->
   </head>
   <body>
     <header>
       <div class="header-container">
-       <img src="../images/Hajime-logo-tudo-branco.jpg" class="logo">
-       <h1>Clube de Judo Hajime</h1>
+        <img src="../images/Hajime-logo-tudo-branco.jpg" class="logo" alt="Logo Clube de Judo Hajime">
+        <h1>Clube de Judo Hajime</h1>
       </div>
-      
       <nav>
-       <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="quemSomos.html">Quem Somos</a></li>
-        <li><a href="centros.html">Centros</a></li>
-        <li><a href="EquipaTecnica.html">Equipa Técnica</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
-        <li><a href="atividadesDesportivas.html">Atividades Desportivas</a></li>
-       </ul>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="quemSomos.html">Quem Somos</a></li>
+          <li><a href="centros.html">Centros</a></li>
+          <li><a href="EquipaTecnica.html" class="active">Equipa Técnica</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="atividadesDesportivas.html">Atividades Desportivas</a></li>
+        </ul>
       </nav>
     </header>
+
     <main>
-      <p>Conhece os professores e treinadores que fazem parte do Clube de Judo Hajime.</p>
+      <section class="intro-equipa">
+        <h2>Equipa Técnica</h2>
+        <h3>Época 2025/2026</h3>
+
+      </section>
+
+      <!-- 🥋 Secção das imagens da equipa -->
+      <section class="equipa-section">
+        <div class="membro">
+          <img src="../Images EquipaTecnica/andre-silva.png" alt="Treinador 1">
+          <div class="overlay">
+            <h3>André Silva</h3>
+            <p>Bombeiros Voluntários de Moscavide e Portela</p>
+            <p>Escola Básica Quinta da Alegria</p>
+            <p>Escola Secundária José Gomes Ferreira</p>
+            <p>Escola Secundária Pedro Alexandrino</p>
+            <p>Espaço Multiusos Olival Basto</p>
+            <p>Colégio Luso-Suíço</p>
+            <p>Externato A Ritinha</p>
+            <p>Externato Santa Catarina</p>
+          </div>
+        </div>
+
+        <div class="membro">
+          <img src="../Images EquipaTecnica/peter_queiros.png" alt="Treinador 2">
+          <div class="overlay">
+            <h3>Sensei Ana Costa</h3>
+            <p>Treinadora adjunta - 2º Dan</p>
+          </div>
+        </div>
+
+        <div class="membro">
+          <img src="../images/treinador3.jpg" alt="Treinador 3">
+          <div class="overlay">
+            <h3>Sensei Rui Pereira</h3>
+            <p>Preparador físico</p>
+          </div>
+        </div>
+      </section>
     </main>
-      <!-- 📨 Secção do formulário de contacto -->
- <section class="contact-section">
-  <h2 class="secao-tituloFormulario">Contacte-nos</h2>
-  <form action="https://formspree.io/f/mwprqbwv" method="POST" class="contact-form">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <!-- 📨 Secção do formulário de contacto -->
+    <section class="contact-section">
+      <h2 class="secao-tituloFormulario">Contacte-nos</h2>
+      <form action="https://formspree.io/f/mwprqbwv" method="POST" class="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="message">Mensagem:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-</main>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-<footer>
-  <!-- Torisport à esquerda -->
-  <div class="footer-logos">
-    
-      <img src="../images/Hajime-logo-tudo-branco.jpg" alt="Clube de Judo Hajime" class="club-logo">
-      
-    <a href="https://www.lojatorisport.pt/" target="_blank">
-    <img src="../images/torisport.jpg" alt="Torisport" class="torisport-logo">
-    </a>
-  </div>
+    <footer>
+      <div class="footer-logos">
+        <img src="../images/Hajime-logo-tudo-branco.jpg" alt="Clube de Judo Hajime" class="club-logo">
+        <a href="https://www.lojatorisport.pt/" target="_blank">
+          <img src="../images/torisport.jpg" alt="Torisport" class="torisport-logo">
+        </a>
+      </div>
 
-  <!-- Conteúdo central -->
-  <div class="footer-center">
-    <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=100042616491458&locale=pt_PT" target="_blank">
-        <img src="../images/facebook.png" alt="Facebook" class="social-icon">
-      </a>
-      <a href="https://www.instagram.com/clubedejudohajime/" target="_blank">
-        <img src="../images/instagram.png" alt="Instagram" class="social-icon">
-      </a>
-    </div>
-    <p>
-      Todos os direitos reservados | 
-      <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao" target="_blank">Livro de Reclamações</a>
-    </p>
-  </div>
-</footer>
+      <div class="footer-center">
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100042616491458&locale=pt_PT" target="_blank">
+            <img src="../images/facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/clubedejudohajime/" target="_blank">
+            <img src="../images/instagram.png" alt="Instagram" class="social-icon">
+          </a>
+        </div>
+        <p>
+          Todos os direitos reservados | 
+          <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao" target="_blank">Livro de Reclamações</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
+
