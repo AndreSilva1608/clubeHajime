@@ -858,7 +858,7 @@ footer {
 
       .centro-horario {
         flex: 1;
-        min-width: 280px;
+        min-width: 300px;
         text-align: center;
       }
 
@@ -867,7 +867,7 @@ footer {
       }
 
       .horario-img {
-        width: 100%;
+        width: 200%;
         max-width: 400px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -884,17 +884,10 @@ footer {
         gap: 20px;
       }
 
-      .professor-foto {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 0 10px rgba(0,0,0,0.15);
-      }
-
       /* 📍 Mapa */
       #map {
-        height: 350px;
+        height: 300px;
+        width: 300px ;
         border-radius: 10px;
       }
 
