@@ -32,62 +32,133 @@
     </header>
 
     <main>
-      <h2 class="secao-titulo">Centros</h2>
-      <section class="centro-section">
-        <div class="centro-content">
-          <div class="centro-text">
-            <ul class="centro-lista">
-              <li><a href="../Centros/bombeirosMoscavidePortela.html">Bombeiros Voluntários de Moscavide e Portela</a></li>
-              <li><a href="../Centros/EscolaSecundariaJoseGomesFerreira.html">Escola Secundária José Gomes Ferreira</a></li>
-              <li><a href="../Centros/EspacoOlivalBasto.html">Espaço Multiusos de Olival Basto</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <h2 class="secao-titulo">Centros do Clube</h2>
+<section class="centro-section">
+  <div class="centro-content">
+    <div class="centro-text">
+      <ul class="centro-lista" id="club-centers">
+        <!-- Os centros serão adicionados aqui via JS -->
+      </ul>
+    </div>
 
-      <!-- COLEGIOS -->
-      <h2 class="colegio-titulo">Colégios</h2>
-      <section class="colegio-section">
-        <div class="colegio-content">
-          <div class="colegio-text">
-            <ul class="colegio-lista">
-              <li><a href="../Colegios/ColegioCosmeEDamiao.html">Colégio Cosme e Damião</a></li>
-              <li><a href="../Colegios/ColegioDaTorre.html">Colégio da Torre</a></li>
-              <li><a href="../Colegios/ColegioDosPlatanos.html">Colégio dos Plátanos</a></li>
-              <li><a href="../Colegios/ColegioLusoSuico.html">Colégio Luso-Suiço</a></li>
-              <li><a href="../Colegios/ColegioMiraRio.html">Colégio Mira Rio</a></li>
-              <li><a href="../Colegios/ColegioMoinhoSonho.html">Colégio Moinho de Sonho</a></li>
-              <li><a href="../Colegios/ColegioOPeluche.html">Colégio O Peluche</a></li>
-              <li><a href="../Colegios/ColegioPequenosSorrisos.html">Colégio Pequenos Sorrisos</a></li>
-              <li><a href="../Colegios/ColegioPilotoDiese.html">Colégio Piloto Diese</a></li>
-              <li><a href="../Colegios/ColegioPlanalto.html">Colégio Planalto</a></li>
-              <li><a href="../Colegios/ColegioQuintaDoLago.html">Colégio Quinta do Lago</a></li>
-              <li><a href="../Colegios/ColegioSagradoCoracaoMaria.html">Colégio Sagrado Coração Maria</a></li>
-              <li><a href="../Colegios/ColegioSaintDanielBrottier.html">Colégio Saint Daniel Brottier</a></li>
-              <li><a href="../Colegios/ColegioStJhonsSchool.html">Colégio St. Jhon's School</a></li>
-            </ul>
-          </div>
+    <div class="map-container">
+      <div id="map" style="height: 600px; width: 700px;"></div>
+    </div>
+  </div>
+</section>
 
-         <div class="map-container">
-  <div id="map"></div>
-</div>
-      </section>
+<script>
+  // Array com os centros do clube
+  const centers = [
+    {
+      name: "Bombeiros Voluntários de Moscavide e Portela",
+      address: "Rua Exemplo 123, Moscavide",
+      lat: 38.759, 
+      lng: -9.111
+    },
+    {
+      name: "Escola Secundária José Gomes Ferreira",
+      address: "Avenida Exemplo 456, Lisboa",
+      lat: 38.768,
+      lng: -9.156
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },{
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    {
+      name: "Espaço Multiusos de Olival Basto",
+      address: "Rua Exemplo 789, Olival Basto",
+      lat: 38.758,
+      lng: -9.182
+    },
+    
+  ];
 
-      <h2 class="secao-titulo">Escolas</h2>
-      <section class="escolas-section">
-        <div class="escolas-content">
-          <div class="escolas-text">
-            <ul class="escolas-lista">
-              <li><a href="../Externatos/ExternatoARitinha.html">Externato A Ritinha</a></li>
-              <li><a href="../Externatos/ExternatoJardimDosLombos.html">Externato Jardim dos Lombos</a></li>
-              <li><a href="../Externatos/ExternatoNossaSenhoraDaPaz.html">Externato Nossa Senhora da Paz</a></li>
-              <li><a href="../Externatos/ExternatoNovaToca.html">Externato Nova Toca</a></li>
-              <li><a href="../Externatos/ExternatoONial.html">Externato O Nial</a></li>
-              <li><a href="../Externatos/ExternatoSantaCatarina.html">Externato Santa Catarina</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  // Preenche a lista de centros
+  const listContainer = document.getElementById('club-centers');
+  centers.forEach(center => {
+    const li = document.createElement('li');
+    li.innerHTML = `<strong>${center.name}</strong><br>${center.address}`;
+    listContainer.appendChild(li);
+  });
+
+  // Inicializa o mapa
+  const map = L.map('map').setView([38.75, -9.15], 12);
+
+  // Adiciona camada do mapa
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Adiciona pins no mapa
+  centers.forEach(center => {
+    L.marker([center.lat, center.lng])
+      .addTo(map)
+      .bindPopup(`<strong>${center.name}</strong><br>${center.address}`);
+  });
+</script>
     </main>
 
  
